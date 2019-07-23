@@ -1,0 +1,13 @@
+---
+plugin: gcp_compute
+zones:
+ - us-east1-b
+projects:
+  - ansible-gce-demo-247311
+filters: []
+groups:
+  webservers: "'web-' in name"
+scopes:
+  - https://www.googleapis.com/auth/compute
+service_account_file: ~/Documents/ansible-gce-demo-247311-7675608ae3a5.json
+auth_kind: serviceaccount
